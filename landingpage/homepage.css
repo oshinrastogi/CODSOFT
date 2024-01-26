@@ -1,0 +1,393 @@
+.header {
+    overflow: hidden;
+    background-color:rgb(46, 46, 46);
+    padding: 30px 10px;
+    border-radius:20px ;
+    margin-bottom: 5px;
+    
+    }
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .headbottom
+  {
+    padding: 30px;
+    width: 100%;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/11/Education-Wallpapers-HD.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 600px;
+    border-radius:20px ;
+  }
+  .square {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  .header a.logo {
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 40px;
+
+  }
+  .alliestext
+  {
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+  }
+  
+ 
+  .header a.active {
+    background-color:rgb(207, 64, 140);
+    color: rgb(12, 0, 0);
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: larger;
+
+  }
+  .header a.activehome {
+    background-color:rgb(38, 166, 225);
+    color: rgb(12, 0, 0);
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: larger;
+
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+   
+  }
+  
+  
+  
+  .sub-head{
+    color: indigo;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+    background-color:lightblue;
+  }
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+    
+}  
+.slideshow-container {
+  max-width: 100%;
+  border-radius: 20px;
+  
+  
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:none;
+  position: relative;
+  text-align: center;
+  color: white;
+  
+}
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  width: 700px;
+  height: 350px;
+  font-size: 50px;
+  background: rgba(0, 0, 0, 0.0);
+  transform: translate(-50%, -50%);
+  border-radius: 90px;
+  color: black;
+}
+
+/* Style the image */
+.slideshow-container img {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  
+  
+}
+.slider {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  border: 2px solid indigo;
+  border-radius: 20px;
+  color: indigo;
+
+}
+
+.slider-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide 10s linear infinite;
+  font-size: 100px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+.container{
+  background-color: grey;
+  height:60px;
+  width: 455px;
+  border-radius: 120px;
+  border-color: grey;
+  text-align: center;
+  font-size: xx-large;
+  margin: auto;
+  padding-top: 26px;
+  cursor:pointer;
+ 
+}
+.center{
+  text-align: center;
+  font-style: normal;
+  margin: auto;
+  padding-top: 30px;
+  text-decoration: double;
+  font-size: 100px;
+  background-color: lavender;
+  border:2px solid black;
+  border-radius: 20px;
+  color: indigo;
+  margin-top:20px;
+  border-color: indigo;
+}
+.container3 {
+  text-align: center;
+}
+
+.container3 img {
+  display: block;
+  margin: 0 auto;
+  height: 320px;
+  width: 300px;
+}
+#options-list {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#options-list li {
+  list-style: none;
+  margin: 5px 0;
+  cursor:zoom-in;
+}
+#options-btn{
+  cursor:pointer;
+  
+
+}
+#login{
+  cursor:pointer;
+}
+
+/* .whole{
+  margin-top: 690px;
+} */
+.person {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  
+}
+
+.person img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.person p {
+  margin-top: 5px;
+}
+.social-toggle {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.social-toggle a {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.social-toggle img {
+  width: 40px;
+  height: 40px;
+}
+.images1
+{
+   border-radius: 60px;
+   margin-left: 200px;
+   margin-top: 10px;
+   font-size: 60px;
+   text-align: center;
+   border: 0px solid black;
+   filter: drop-shadow(20px 20px 10px rgb(82, 107, 122));
+
+   
+ 
+}
+.images1:hover
+{
+  border: 2px solid rgb(20, 173, 207);
+    transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.images2
+{
+   border-radius: 60px;
+   margin-right:100px;
+   border: 0px solid black;
+  margin-top: 10px;
+  filter: drop-shadow(20px 20px 10px  rgb(82, 107, 122));
+ 
+}
+.images2:hover
+{
+  border: 2px solid rgb(20, 173, 207);
+  transform: scale(1.03);
+}
+.div
+{
+ 
+  display: flex;
+  /* width: 100%; */
+}
+.halfdiv1
+{
+      width: 50%;
+      display: flex;
+     
+      height: 300px;
+}
+
+.halfdiv2
+{
+      width: 50%;
+      display: flex;
+     
+      height:300px;
+      
+}
+
+.subname
+{
+  /* border:5px solid red; */
+  display:flex;
+  width:50%
+}
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  width: 33.33%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.image-container p {
+  margin-top: 5px;
+  font-size: 50px;
+}
+.developers {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  height: 450px;
+  border-radius: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+footer h {
+  margin-bottom: 10px;
+  color: aliceblue;
+  font-size:30px;
+}
+
+footer .social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+footer .social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer .social-icons a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-indent: -9999px;
+}
+
+/* Customize the social media icons */
+footer .telegram-icon {
+  background-image: url('telegram.png'); /* Replace with your Telegram logo image path */
+}
+
+footer .whatsapp-icon {
+  background-image: url('whatsapp.png'); /* Replace with your WhatsApp logo image path */
+}
+
+footer .twitter-icon {
+  background-image: url('twitter.png'); /* Replace with your Twitter logo image path */
+}
+footer .insta-icon {
+  background-image: url('insta.png'); /* Replace with your Twitter logo image path */
+}
+footer .facebook-icon {
+  background-image: url('facebook.png'); /* Replace with your Twitter logo image path */
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Style the image */
+    .slideshow-container img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your header content here -->
+  
+  <div class="slideshow-container">
+    <!-- Images in the slideshow -->
+    <div class="mySlides">
+      <img src="https://www.pixelstalk.net/wp-content/uploads/2016/11/Education-Wallpapers-HD.jpg" alt="Image 1">
+    </div>
+    
+    <div class="mySlides">
+      <img src="https://images.pexels.com/photos/374899/pexels-photo-374899.jpeg" alt="Image 2">
+    </div>
+    
+    <div class="mySlides">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKYFbkDhBZ3QFsBIK71nIbo0Y8aWsudMlPs3hC6oHddi-ER9FqS2hzWbV5h67OqQKa26I&usqp=CAU" alt="Image 3">
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript for the slideshow functionality
+    var slideIndex = 0;
+    var timer;
+    
+    showSlides(); // Start the slideshow
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      
+      // Hide all the slides
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      
+      // Increment the slide index
+      slideIndex++;
+      
+      // Reset the index if it exceeds the number of slides
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      
+      // Display the current slide
+      slides[slideIndex - 1].style.display = "block";
+      
+      // Change slide every 3 seconds
+      timer = setTimeout(showSlides, 3000);
+    }
+    
+    function stopSlide() {
+      clearTimeout(timer); // Clear the timeout to stop the slideshow
+    }
+  </script>
+</body>
+</html>
